@@ -1,4 +1,6 @@
 //number reodering puzzle
+// by NAGULESH N CSE(I) DEPT
+//IQUBE task 2
 
 #include<stdio.h>
 #include<time.h>
