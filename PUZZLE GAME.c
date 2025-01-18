@@ -35,7 +35,7 @@ if(found==0)
 }
 }
 void display(){
-    printf("\n------------------------\n");
+    printf("\n-------------------------\n");
     int i,j,count;
     for(i=0;i<3;i++){
         for(j=0;j<3;j++){
@@ -44,7 +44,7 @@ void display(){
         else
         printf("| %3d \t",mat[i][j]);
         }
-        printf("|\n------------------------\n");
+        printf("|\n--------------------------\n");
     }
 
 }
@@ -56,19 +56,19 @@ display();
 if(mat[2][2]==0&&mat[2][1]==8&&mat[2][0]==7&&mat[1][2]==6&&mat[1][1]==5&&mat[1][0]==4&&mat[0][2]==3&&mat[0][1]==2&&mat[0][0]==1)
 {
 
-     printf("\nCONGRATION YOU WON THE GAME\n");
+     printf("\n CONGRATULATION YOU WON THE GAME\n");
 
 }
 
 else{
-printf("\nENTER THE ADJACENT VALUE YOU NEED TO MOVE: \n");
+printf("\n ENTER THE ADJACENT VALUE YOU NEED TO MOVE: \n");
 scanf("%d",&swap);
 if(swap>=1&&swap<=8){
     for(i=0;i<3;i++){
         for(j=0;j<3;j++){
 
             if(mat[i][j]==swap){
-                    printf("\nNumber found \n");
+                    printf("\n Number found \n");
                     goto a;
         }
         }
